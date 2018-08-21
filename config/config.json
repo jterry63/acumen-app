@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "tbd",
+    "password": "Onion2018",
+    "database": "onionDB",
+    "host": "138.68.20.131",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "tbd",
+    "password": "Onion2018",
+    "database": "onionDB",
+    "host": "138.68.20.131",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}
