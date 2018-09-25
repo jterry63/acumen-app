@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create Survey</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!--Optimize for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!--Link to local CSS File-->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/styles/ion.rangeSlider.css">
+    <link rel="stylesheet" href="/styles/ion.rangeSlider.skinHTML5.css">
+
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/favicon2-32x32.png" sizes="32x32" />
+
+
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav>
+
+            <div class="nav-wrapper">
+                <a href="/">
+                    <img src="/images/acumen2.png" id="logo" class="brand-logo" style="width: 152px; height: 20px;">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+
+
+
+
+            </div>
+    </div>
+    </nav>
+    </div>
+
+    <!--Survey Header-->
+    <div class="section" id="surveyHeader">
+        <br><br>
+        <h2 class="center" id="helloHeader">Hello.</h2>
+
+
+
+        <div class="row">
+            <div class="col s3 m3"></div>
+            <div class="col s6 m6">
+                <div class="center">
+                    <h4 class="center" id="surveyIntro"> Welcome to the Acumen Pulse for August. Please take a minute to
+                        answer the questions below. Your participation will help us get a real pulse on life at Example Inc.
+                        So, thanks for taking part.
+                    </h4>
+                </div>
+            </div>
+            <div class="col s3 m3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col s4 m4"></div>
+            <div class="col s4 m4">
+                <div class="center">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger' data-target='dropdown1'>English <i class="material-icons" style="font-size: 12px;">keyboard_arrow_down</i>
+                    </a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">Español</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 m4"></div>
+        </div>
+        <br>
+
+
+        <p class="center" id="surveyWarning">Your responses are confidential and reported to managers and Example Inc
+            <br> in aggregate groups. For more information view the: Data Protection Summary.<br> Take care not to identify
+            yourself in the comments.</p>
+        <br>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col s4 m4"></div>
+        <div class="col s4 m4">
+            <div class="center">
+                <i class="material-icons center" id="dropDownIcon">keyboard_arrow_down</i>
+            </div>
+        </div>
+        <div class="col s4 m4"></div>
+    </div>
+
+    <!--Question 1 Start-->
+
+    <div class="section" id="question_one">
+
+        <h2 class="center" style="color: black; font-weight: bolder;">01.</h2>
+        <h4 class="center" style="font-weight: bold;">How happy are you working at Example Inc?
+        </h4>
+        <br><br>
+
+        <div class="row">
+
+            <div class="col s3 m3"></div>
+
+            <div class="col s6 m6">
+                <div class="row" id="surveyTags">
+                    <div class="col s3 m3">
+                        <div class="left-align">
+                            <p style="font-family: 'graphik';">Not at all</p>
+                        </div>
+                    </div>
+                    <div class="col s6 m6"></div>
+                    <div class="col s3 m3">
+                        <div class="right-align">
+                            <p style="font-family: 'graphik';">Completely happy</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Range Slider-->
+                <div class="center">
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="test1" min="1" max="5" name="value" />
+                        </p>
+                    </form>
+
+
+                    <!-- <form class="center" id="test1">
+
+                        <div class="col s1 m1">
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio" />1
+                                    <span id="radio1"></span>
+                                </label>
+                            </p>
+                        </div>
+
+
+                        <div class="col s1 m1">
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio" />2
+                                    <span></span>
+                                </label>
+                            </p>
+                        </div>
+
+                        <div class="col s1 m1">
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio" />3
+                                    <span></span>
+                                </label>
+                            </p>
+                        </div>
+
+                        <div class="col s1 m1">
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio" />4
+                                    <span></span>
+                                </label>
+                            </p>
+                        </div>
+
+                        <div class="col s1 m1">
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio" />5
+                                    <span></span>
+                                </label>
+                            </p>
+                        </div>
+
+                    </form> -->
+                </div>
+                <div class="col s3 m3"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Comment Field-->
+    <div class="row">
+        <div class="col s3 m3"></div>
+        <div class="col s6 m6">
+            <div class="input-field" id="comment1">
+                <textarea id="textarea1" class="materialize-textarea" style="padding: 10px;"></textarea>
+                <label for="textarea1" style="text-indent: 10px; font-family: 'proxima nova';">Please free to add your comments
+                    here
+                </label>
+                <a class="waves-effect waves-light btn right" id="save1" style="margin-left: 10px; background-color: whitesmoke; color: grey;">Save</a>
+
+                <a class="waves-effect waves-light btn right" id="skip1" style="background-color: whitesmoke; color: grey;">Skip</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s3 m3"></div>
+    <div>
+
+        <br><br><br><br>
+
+
+
+
+        <!--Question 1 End-->
+
+        <!--Question Hint 1 Start-->
+        <div class="section" id="question_hint1">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center" onclick="M.toast({html: 'This question is required', classes: 'rounded', displayLength: '1000'})"
+                            id="dropDownHint">keyboard_arrow_down</i>
+                    </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+        </div>
+        <!--Question Hint 1 End-->
+
+        <!--Question 2 Start-->
+        <div class="section" id="question_two">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center tooltipped" data-position="top" data-tooltip="This question is required" id="dropDownIcon2">keyboard_arrow_down</i>
+
+
+                    </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+            <h2 class="center" style="color: black; font-weight: bolder;">02.</h2>
+            <h4 class="center">I frequently receive recognition for my work.
+            </h4>
+
+            <div class="row">
+                <div class="col s3 m3"></div>
+                <div class="col s6 m6">
+                    <br>
+                    <!--Range Slider-->
+                    <div class="center">
+                        <form action="#">
+                            <p class="range-field">
+                                <input type="range" id="test2" min="1" max="5" />
+                            </p>
+                        </form>
+                    </div>
+                    <!--Comment Field-->
+                    <div class="input-field" id="comment2">
+                        <textarea id="textarea2" class="materialize-textarea" style="padding: 10px;"></textarea>
+                        <label for="textarea2" style="text-indent: 10px; font-family: 'proxima nova';">Please free to add
+                            your comments here
+                        </label>
+                        <a class="waves-effect waves-light btn right" id="save2" style="margin-left: 10px; background-color: whitesmoke; color: grey;">Save</a>
+
+                        <a class="waves-effect waves-light btn right" id="skip2" style="background-color: whitesmoke; color: grey;">Skip</a>
+                    </div>
+                </div>
+                <div class="col s3 m3"></div>
+            </div>
+            <br><br><br><br>
+        </div>
+        <!--Question 2 End-->
+
+        <!--Question Hint 2 Start-->
+        <div class="section" id="question_hint2">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center" onclick="M.toast({html: 'This question is required', classes: 'rounded', displayLength: '1000'})"
+                            id="dropDownHint">keyboard_arrow_down</i> </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+        </div>
+        <!--Question Hint 2 End-->
+
+        <!--Question 3 Start-->
+        <div class="section" id="question_three">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center tooltipped" data-position="top" data-tooltip="This question is required" id="dropDownIcon3">keyboard_arrow_down</i>
+                    </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+            <h2 class="center" style="color: black; font-weight: bolder;">03.</h2>
+            <h4 class="center">I have the resources I need to do my job well.
+            </h4>
+
+            <div class="row">
+                <div class="col s3 m3"></div>
+                <div class="col s6 m6">
+                    <br>
+                    <!--Range Slider-->
+                    <div class="center">
+                        <form action="#">
+                            <p class="range-field">
+                                <input type="range" id="test3" min="1" max="5" />
+                            </p>
+                        </form>
+                    </div>
+                    <!--Comment Field-->
+                    <div class="input-field" id="comment3">
+                        <textarea id="textarea3" class="materialize-textarea" style="padding: 10px;"></textarea>
+                        <label for="textarea3" style="text-indent: 10px; font-family: 'proxima nova';">Please free to add
+                            your comments here
+                        </label>
+                        <a class="waves-effect waves-light btn right" id="save3" style="margin-left: 10px; background-color: whitesmoke; color: grey;">Save</a>
+
+                        <a class="waves-effect waves-light btn right" id="skip3" style="background-color: whitesmoke; color: grey;">Skip</a>
+                    </div>
+                </div>
+                <div class="col s3 m3"></div>
+            </div>
+            <br><br><br><br>
+        </div>
+        <!--Question 3 End-->
+
+        <!--Question Hint 4 Start-->
+        <div class="section" id="question_hint3">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center" onclick="M.toast({html: 'This question is required', classes: 'rounded', displayLength: '1000'})"
+                            id="dropDownHint">keyboard_arrow_down</i> </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+        </div>
+        <!--Question Hint 4 End-->
+
+        <!--Question 4 Start-->
+        <div class="section" id="question_four">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center tooltipped" data-position="top" data-tooltip="This question is required" id="dropDownIcon4">keyboard_arrow_down</i>
+                    </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+            <h2 class="center" style="color: black; font-weight: bolder;">04.</h2>
+            <h4 class="center">My manager provides me with feedback about my performance to help me do my job better.
+            </h4>
+
+            <div class="row">
+                <div class="col s3 m3"></div>
+                <div class="col s6 m6">
+                    <br>
+                    <!--Range Slider-->
+                    <div class="center">
+                        <form action="#">
+                            <p class="range-field">
+                                <input type="range" id="test4" min="1" max="5" />
+                            </p>
+                        </form>
+                    </div>
+                    <!--Comment Field-->
+                    <div class="input-field" id="comment4">
+                        <textarea id="textarea4" class="materialize-textarea" style="padding: 10px;"></textarea>
+                        <label for="textarea4" style="text-indent: 10px; font-family: 'proxima nova';">Please free to add
+                            your comments here
+                        </label>
+                        <a class="waves-effect waves-light btn right" id="save4" style="margin-left: 10px; background-color: whitesmoke; color: grey;">Save</a>
+
+                        <a class="waves-effect waves-light btn right" id="skip4" style="background-color: whitesmoke; color: grey;">Skip</a>
+                    </div>
+                </div>
+                <div class="col s3 m3"></div>
+            </div>
+            <br><br><br><br>
+        </div>
+        <!--Question 4 End-->
+
+        <!--Question Hint 5 Start-->
+        <div class="section" id="question_hint4">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center" onclick="M.toast({html: 'This question is required', classes: 'rounded', displayLength: '1000'})"
+                            id="dropDownHint">keyboard_arrow_down</i> </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+        </div>
+        <!--Question Hint 5 End-->
+
+        <!--Question 5 Start-->
+        <div class="section" id="question_five">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center tooltipped" data-position="top" data-tooltip="This question is required" id="dropDownIcon5">keyboard_arrow_down</i>
+                    </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+            <h2 class="center" style="color: black; font-weight: bolder;">05.</h2>
+            <h4 class="center">I feel empowered to make decisions regarding my work.
+            </h4>
+
+            <div class="row">
+                <div class="col s3 m3"></div>
+                <div class="col s6 m6">
+                    <br>
+                    <!--Range Slider-->
+                    <div class="center">
+                        <form action="#">
+                            <p class="range-field">
+                                <input type="range" id="test5" min="1" max="5" />
+                            </p>
+                        </form>
+                    </div>
+                    <!--Comment Field-->
+                    <div class="input-field" id="comment5">
+                        <textarea id="textarea5" class="materialize-textarea" style="padding: 10px;"></textarea>
+                        <label for="textarea5" style="text-indent: 10px; font-family: 'proxima nova';">Please free to add
+                            your comments here
+                        </label>
+                        <a class="waves-effect waves-light btn right" id="save5" style="margin-left: 10px; background-color: whitesmoke; color: grey;">Save</a>
+
+                        <a class="waves-effect waves-light btn right" id="skip5" style="background-color: whitesmoke; color: grey;">Skip</a>
+                    </div>
+                </div>
+                <div class="col s3 m3"></div>
+            </div>
+            <br><br><br><br>
+        </div>
+        <!--Question 5 End-->
+
+        <!--Question Hint 5 Start-->
+        <div class="section" id="question_hint5">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center" onclick="M.toast({html: 'This question is required', classes: 'rounded', displayLength: '1000'})"
+                            id="dropDownHint">keyboard_arrow_down</i> </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+        </div>
+        <!--Question Hint 5 End-->
+
+        <!--Question 6 Start-->
+        <div class="section" id="question_six">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center tooltipped" data-position="top" data-tooltip="This question is required" id="dropDownIcon6">keyboard_arrow_down</i>
+                    </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+            <h2 class="center" style="color: black; font-weight: bolder;">06.</h2>
+            <h4 class="center">I would highly recommend my manager to others.
+            </h4>
+
+            <div class="row">
+                <div class="col s3 m3"></div>
+                <div class="col s6 m6">
+                    <br>
+                    <!--Range Slider-->
+                    <div class="center">
+                        <form action="#">
+                            <p class="range-field">
+                                <input type="range" id="test6" min="1" max="5" />
+                            </p>
+                        </form>
+                    </div>
+                    <!--Comment Field-->
+                    <div class="input-field" id="comment6">
+                        <textarea id="textarea6" class="materialize-textarea" style="padding: 10px;"></textarea>
+                        <label for="textarea6" style="text-indent: 10px; font-family: 'proxima nova';">Please free to add
+                            your comments here
+                        </label>
+                        <a class="waves-effect waves-light btn right" id="save6" style="margin-left: 10px; background-color: whitesmoke; color: grey;">Save</a>
+
+                        <a class="waves-effect waves-light btn right" id="skip6" style="background-color: whitesmoke; color: grey;">Skip</a>
+                    </div>
+                </div>
+                <div class="col s3 m3"></div>
+            </div>
+            <br><br><br><br>
+        </div>
+        <!--Question 6 End-->
+
+        <!--Question Hint 6 Start-->
+        <div class="section" id="question_hint6">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center" onclick="M.toast({html: 'This question is required', classes: 'rounded', displayLength: '1000'})"
+                            id="dropDownHint">keyboard_arrow_down</i> </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+        </div>
+        <!--Question Hint 6 End-->
+
+        <!--Question 7 Start-->
+        <div class="section" id="question_seven">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center tooltipped" data-position="top" data-tooltip="This question is required" id="dropDownIcon7">keyboard_arrow_down</i>
+                    </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+            <h2 class="center" style="color: black; font-weight: bolder;">07.</h2>
+            <h4 class="center">I feel confident that my manager is the right person for the job.
+            </h4>
+
+            <div class="row">
+                <div class="col s3 m3"></div>
+                <div class="col s6 m6">
+                    <br>
+                    <!--Range Slider-->
+                    <div class="center">
+                        <form action="#">
+                            <p class="range-field">
+                                <input type="range" id="test7" min="1" max="5" />
+                            </p>
+                        </form>
+                    </div>
+                    <!--Comment Field-->
+                    <div class="input-field" id="comment7">
+                        <textarea id="textarea7" class="materialize-textarea" style="padding: 10px;"></textarea>
+                        <label for="textarea7" style="text-indent: 10px; font-family: 'proxima nova';">Please free to add
+                            your comments here
+                        </label>
+                        <a class="waves-effect waves-light btn right" id="save7" style="margin-left: 10px; background-color: whitesmoke; color: grey;">Save</a>
+
+                        <a class="waves-effect waves-light btn right" id="skip7" style="background-color: whitesmoke; color: grey;">Skip</a>
+                    </div>
+                </div>
+                <div class="col s3 m3"></div>
+            </div>
+            <br><br><br><br>
+        </div>
+        <!--Question 7 End-->
+
+        <!--Question Hint 7 Start-->
+        <div class="section" id="question_hint7">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center" onclick="M.toast({html: 'This question is required', classes: 'rounded', displayLength: '1000'})"
+                            id="dropDownHint">keyboard_arrow_down</i> </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+        </div>
+        <!--Question Hint 7 End-->
+
+        <!--Question 8 Start-->
+        <div class="section" id="question_eight">
+
+            <div class="row">
+                <div class="col s4 m4"></div>
+                <div class="col s4 m4">
+                    <div class="center">
+                        <i class="material-icons center tooltipped" data-position="top" data-tooltip="This question is required" id="dropDownIcon8">keyboard_arrow_down</i>
+                    </div>
+                </div>
+                <div class="col s4 m4"></div>
+            </div>
+
+            <h2 class="center" style="color: black; font-weight: bolder;">08.</h2>
+            <h4 class="center">What else is on your mind?
+            </h4>
+
+            <div class="row">
+                <div class="col s3 m3"></div>
+                <div class="col s6 m6">
+                    <br>
+
+                    <!--Comment Field-->
+                    <div class="input-field" id="comment8">
+                        <textarea id="textarea8" class="materialize-textarea" style="padding: 10px;"></textarea>
+                        <label for="textarea8" style="text-indent: 10px; font-family: 'proxima nova';">Please free to add
+                            your comments here
+                        </label>
+
+                    </div>
+                </div>
+                <div class="col s3 m3"></div>
+            </div>
+
+        </div>
+        <!--Question 8 End-->
+
+
+    </div>
+    <div class="center" id="submitBtn">
+        <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger" id="submit" style="background-color: darkcyan;">
+
+            Submit Responses</button>
+        <br>
+
+        <br>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+<!--Materialize JS CDN-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script> -->
+<!--Local JS File-->
+<script src="/js/main.js"></script>
+<script src="/js/survey.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/ion.rangeSlider.min.js"></script>
+<script>    
+
+    $("#question1").ionRangeSlider({
+        grid: true,
+        from: 5,
+        values: [
+            "0", "1",
+            "2", "3",
+            "4", "5",
+            "6", "7",
+            "8", "9",
+            "10"
+        ]
+    });
+
+    $("#question2").ionRangeSlider({
+        min: 0,
+        max: 10,
+        from: 5
+    });
+
+    $("#question5").ionRangeSlider({
+        grid: true,
+        from: 5,
+        values: [
+            "0", "1",
+            "2", "3",
+            "4", "5",
+            "6", "7",
+            "8", "9",
+            "10"
+        ]
+    });
+
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
+
+    $(document).ready(function () {
+        $('select').formSelect();
+    });
+
+</script>
+
+</html>

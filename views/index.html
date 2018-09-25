@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Employee Experience Platform - Acumen</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+  <!--Optimize for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--jquery CDN-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <!--Link to local CSS File-->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/animate.min.css">
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="images/favicon2-32x32.png" sizes="32x32" />
+  <!-- //Google Signin -->
+  <meta name="google-signin-client_id" content="421586911380-fcmc0u1q42cca6ipa2kpk808vimbue2n.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <!-- <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper" style="background-color: white;">
+        <a href="/">
+          <img src="/images/acumen.png" id="logo" class="brand-logo" style="width: 152px; height: 20px;">
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="" style="color: grey;" id="nav1">Platform</a>
+          </li>
+          <li>
+            <a href="" style="color: grey;" id="nav2">Product</a>
+          </li>
+          <li>
+            <a href="#modal1" style="color: grey;" id="nav3" class="modal-trigger">Company</a>
+          </li>
+          <li>
+            <a href="#modal1" style="color: grey;" id="nav3" class="modal-trigger">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div> -->
+
+  <!-- Slider Section -->
+
+  <div class="slider">
+
+    <ul class="slides">
+
+
+      <div class="navbar-fixed">
+        <nav>
+
+          <div class="nav-wrapper">
+            <a href="/">
+              <img src="/images/acumen2.png" id="logo" class="brand-logo" style="width: 152px; height: 20px;">
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+
+
+            <div id="nav-buttons">
+
+              <a href="" class="waves-effect waves-teal btn-flat" style="color: grey;" id="nav1">Platform</a>
+
+              <a href="" class="waves-effect waves-teal btn-flat" style="color: grey;" id="nav2">Product</a>
+
+              <a href="" class="waves-effect waves-teal btn-flat" style="color: grey;" id="nav3">Company</a>
+
+              <a href="#modal1" class="waves-effect waves-teal btn-flat modal-trigger" style="color: grey;" id="nav4">Login</a>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+
+      <li>
+        <img src="images/employees.jpg" style="opacity: .9;">
+
+        <div class="caption center-align" style="margin-top: 200px;">
+          <h2 id="slogan" style="font-weight: 200; font-size: 50px;">When employees are happy, <br>your organization succeeds</h2>
+        </div>
+        <div class="buttons-wrapper">
+          <div class="row center">
+            <a class="waves-effect waves-light btn modal-trigger" id="getStarted" href="#modal1" style="background-color: rgba(0,0,0,0); border: 1px solid white;">get
+              started
+            </a>
+          </div>
+        </div>
+      </li>
+      <!-- <li>
+        <img src="https://images.unsplash.com/photo-1507890558501-9fd4b3495ae1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjF9&s=9b9e66b7b91c249be741716f8514ded2&auto=format&fit=crop&w=1650&q=80">
+
+        <div class="caption center-align">
+          <h3 style="font-weight: 200; font-size: 50px;">The exmployee experience platform that helps you understand your
+            people - and your organization</h3>
+        </div>
+      </li> -->
+      <!-- <li>
+        <img src="https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-0.3.5&s=699c894af5dd10db81316a52181d1902&auto=format&fit=crop&w=1650&q=80"
+          style="opacity: .7">
+
+        <div class="caption left-align">
+          <h3 style="font-weight: 200; font-size: 50px;">Data that helps you make informed decisions and visualize your success
+          </h3>
+        </div>
+      </li> -->
+      <!-- <li>
+        <img src="https://images.unsplash.com/photo-1525168040608-0fa00f174419?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c04268d1ae7ec8c6019db36937aa4cce&auto=format&fit=crop&w=1650&q=80"
+          style="opacity: .7">
+
+        <div class="caption right-align">
+          <h3 style="font-weight: 200; font-size: 60px;">Build a culture in the workplace
+            <br>that you're proud of</h3>
+        </div>
+      </li> -->
+    </ul>
+  
+
+    <br>
+    <br>
+
+
+
+    <!--   Icon Section   -->
+    <div class="container">
+
+      <h4 class="center">The exmployee experience platform <br>that helps you understand your people <br> and your organization</h4>
+
+
+      <div class="section" id="about">
+
+
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons" style="color: darkcyan; font-size: 40px;">group</i></h2>
+              <h5 class=" center ">Simple User Experience</h5>
+
+              <p class="light ">We did most of the heavy lifting for you to provide a default stylings that incorporate our
+                custom components. Additionally, we refined animations and transitions to provide a smoother experience for
+                developers.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m4 ">
+            <div class="icon-block ">
+              <h2 class="center light-blue-text "><i class="material-icons " style="color: darkcyan; font-size: 40px;">data_usage</i></h2>
+              <h5 class="center ">Data Driven Insights</h5>
+
+              <p class="light ">By utilizing elements and principles of Material Design, we were able to create a framework
+                that incorporates components and animations that provide more feedback to users. Additionally, a single underlying
+                responsive system across all platforms allow for a more unified user experience.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4 ">
+            <div class="icon-block ">
+              <h2 class="center light-blue-text "><i class="material-icons " style="color: darkcyan; font-size: 40px;">feedback</i></h2>
+              <h5 class=" center ">Informed Decision Making</h5>
+
+              <p class="light ">We have provided detailed documentation as well as specific code examples to help new users
+                get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br><br>
+    </div>
+
+
+    <div class="section" id="contact">
+
+      <div class="simple-subscription-form">
+        <form class="center">
+
+          <h3 class="center">See what's new <br>with Acumen</h3>
+          <br>
+          <p>Stay up to date with all of the latest information and updates <br>that will help your organization continue
+            building a successful culture
+          </p>
+          <div class="row">
+            <div class="input-field col s4"></div>
+            <div class="input-field col s4">
+              <input id="emailSubscription" type="email" class="validate">
+              <label for="email" style="color: white;">Email</label>
+            </div>
+            <div class="input-field col s4"></div>
+          </div>
+          <a class="waves-effect waves-light btn" style="background-color: rgba(0,0,0,0); border: 1px solid white;">Subscribe</a>
+        </form>
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Modal Structure for Login -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+
+        <h5 style="text-align: center; color: grey;">Sign In</h5>
+
+
+
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" required>
+          <label for="email">Email</label>
+        </div>
+
+
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate" minlength="6" required>
+          <label for="password">Password</label>
+        </div>
+
+
+        <br>
+        <div class="text-center p-t-136">
+          <a class="txt2" href="register">
+            Register
+            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+          </a>
+        </div>
+        <br>
+        <div class="text-center p-t-136">
+          <a class="txt2" href="#">
+            Forgot Password?
+            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+          </a>
+        </div>
+        <br>
+        <!-- <div class="g-signin2 " data-onsuccess="onSignIn "></div> -->
+
+      </div>
+      <div class="modal-footer">
+        <a href="admin" class="modal-close waves-effect waves-green btn-flat" style="color: white; background-color:
+                  darkcyan;">Login</a>
+      </div>
+    </div>
+
+    <!-- Sidenav for Mobile  -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">Platform</a></li>
+      <li><a href="badges.html">Product</a></li>
+      <li><a href="collapsible.html">Company</a></li>
+      <li><a href="mobile.html">Login</a></li>
+    </ul>
+
+    <!-- End Sidenav for Mobile -->
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+
+            <img src="images/acumen2.png " id="footerLogo " style="width: 152px; height: 20px; margin-top: 20px; ">
+            <br>
+
+            <p class="black-text">info@acumenapp.com</p>
+            <p class="black-text">(801) 835-3803</p>
+
+            <div class="wrapper">
+
+              <a target="_blank " href="https://linkedin.com ">
+                <i class="fa fa-2x fa-linkedin-square "></i>
+              </a>
+              <a target="_blank " href="https://twitter.com ">
+                <i class="fa fa-2x fa-twitter-square "></i>
+              </a>
+              <a target="_blank " href="https://facebook.com ">
+                <i class="fa fa-2x fa-facebook-square "></i>
+              </a>
+              <a target="_blank " href="https://instagram.com ">
+                <i class="fa fa-2x fa-instagram "></i>
+              </a>
+            </div>
+
+          </div>
+          <br>
+
+          <div class="col l2 s12">
+            <h6 class="black-text">Company</h6>
+            <hr>
+            <ul>
+              <li><a class="black-text" href="#!">About Us</a></li>
+              <li><a class="black-text" href="#!">Our Mission</a></li>
+
+            </ul>
+          </div>
+          <div class="col l2 s12">
+            <h6 class="black-text">Products</h6>
+            <hr>
+            <ul>
+              <li><a class="black-text" href="#!">Engagement</a></li>
+              <li><a class="black-text" href="#!">Onboarding</a></li>
+              <li><a class="black-text" href="#!">IdeaBox</a></li>
+            </ul>
+          </div>
+          <div class="col l2 s12">
+            <h6 class="black-text">Platform</h6>
+            <hr>
+            <ul>
+              <li><a class="black-text" href="#!">Admin Dashboard</a></li>
+              <li><a class="black-text" href="#!">Analytics</a></li>
+              <li><a class="black-text" href="#!">See a Demo</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+
+
+</body>
+
+<!--Materialize JS CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
+<!--Local JS File-->
+<script src="js/main.js "></script>
+
+</html>

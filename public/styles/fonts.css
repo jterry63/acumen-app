@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'avant';
+    src: url('..//styles/AvantGardeLT-ExtraLight.otf');
+}
+
+@font-face {
+    font-family: 'karla';
+    src: url('..//styles/Karla-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'nexa';
+    src: url('..//styles/Nexa\ Light.otf');
+}
+
+
+@font-face {
+    font-family: 'graphik';
+    src: url('..//styles/Graphik-200-Extralight.otf');
+}
