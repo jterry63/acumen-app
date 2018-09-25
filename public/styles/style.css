@@ -271,12 +271,13 @@ body {
 }
 
 
-
   .row .col.s4 {
-    width: 100.333333% !important;
+    width: 100% !important;
   
 
   }
+
+  
 #surveyIntro {
   padding: 30px;
   font-size: 25px;
@@ -402,7 +403,9 @@ input[type=range]:focus::-ms-fill-upper {
   left: 20% !important;
 }
 
+
 }
+
 
 
 #surveyHeader {
