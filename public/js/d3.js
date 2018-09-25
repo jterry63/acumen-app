@@ -366,11 +366,11 @@
       };
       return nest;
     };
-    d3.set = function(array) {
-      var set = new d3_Set();
-      if (array) for (var i = 0, n = array.length; i < n; ++i) set.add(array[i]);
-      return set;
-    };
+    // d3.set = function(array) {
+    //   var set = new d3_Set();
+    //   if (array) for (var i = 0, n = array.length; i < n; ++i) set.add(array[i]);
+    //   return set;
+    // };
     function d3_Set() {
       this._ = Object.create(null);
     }
