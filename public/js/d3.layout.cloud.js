@@ -208,9 +208,9 @@
       return Math.sqrt(d.value);
     }
   
-    function cloudRotate() {
-      return (~~(Math.random() * 6) - 3) * 30;
-    }
+    // function cloudRotate() {
+    //   return (~~(Math.random() * 6) - 3) * 30;
+    // }
   
     function cloudPadding() {
       return 1;
