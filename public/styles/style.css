@@ -271,13 +271,12 @@ body {
 }
 
 
+
   .row .col.s4 {
-    width: 100% !important;
+    width: 100.333333% !important;
   
 
   }
-
-  
 #surveyIntro {
   padding: 30px;
   font-size: 25px;
@@ -403,9 +402,7 @@ input[type=range]:focus::-ms-fill-upper {
   left: 20% !important;
 }
 
-
 }
-
 
 
 #surveyHeader {
@@ -537,13 +534,25 @@ input[type=range]::-webkit-slider-thumb {
 #surveyTags {
   margin-bottom: 0px;
 }
-/* 
-input[type=range]::-webkit-slider-thumb {
 
-  background: grey;
- 
-} */
+#progressBar {
+  width: 15%;
+  float: right;
+  margin-right: 120px;
+}
 
+#progressText {
+  line-height: 12px !important;
+  color: darkcyan;
+}
+
+.progress .determinate {
+  background-color: silver;
+}
+
+.progress {
+  background-color: silver;
+}
 
 
 

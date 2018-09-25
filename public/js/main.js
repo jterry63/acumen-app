@@ -6,6 +6,7 @@ $(document).on("scroll", function (event) {
     $("#nav3").css('color', 'white');
     $("#nav4").css('color', 'white');
     $(".nav-wrapper").css('background-color', 'rgba(81,163,154, .9)');
+    $("#progressText").css('color', 'white');
 });
 $(window).scroll(function () {
     var height = $(window).scrollTop();
@@ -18,6 +19,7 @@ $(window).scroll(function () {
         $("#nav3").css('color', 'grey');
         $("#nav4").css('color', 'grey');
         $(".nav-wrapper").css('background-color', 'rgba(255,255,255, 0.9)');
+        $("#progressText").css('color', 'darkcyan');
     }
 });
 
@@ -54,22 +56,21 @@ $("#test1").mouseup(function () {
 });
 
 // $("#test1").mouseup(function () {
-//     var value = $("#test1").val();
-//     console.log(value);
-//     if (value == 1) {
-//         $(".thumb").css("background", "red");
+//     var value1 = $("#test1").val();
+//     if (value1 == 1) {
+//         $(".thumb").css("background", "#cc0000");
 //     }
-//     if (value == 2) {
-//         $(".thumb").css("background", "orange");
+//     if (value1 == 2) {
+//         $(".thumb").css("background", "#e06666");
 //     }
-//     if (value == 3) {
-//         $(".thumb").css("background", "yellow");
+//     if (value1 == 3) {
+//         $(".thumb").css("background", "#51a39a");
 //     }
-//     if (value == 4) {
-//         $(".thumb").css("background", "green");
+//     if (value1 == 4) {
+//         $(".thumb").css("background", "#6aa84f");
 //     }
-//     if (value == 5) {
-//         $(".thumb").css("background", "darkcyan");
+//     if (value1 == 5) {
+//         $(".thumb").css("background", "#38761d");
 //     }
 // });
 
@@ -78,25 +79,139 @@ $("#test2").mouseup(function () {
 
 });
 
+// $("#test2").mouseup(function () {
+//     var value2 = $("#test2").val();
+//     if (value2 == 1) {
+//         $(".thumb").css("background", "#cc0000");
+//     }
+//     if (value2 == 2) {
+//         $(".thumb").css("background", "#e06666");
+//     }
+//     if (value2 == 3) {
+//         $(".thumb").css("background", "#51a39a");
+//     }
+//     if (value2 == 4) {
+//         $(".thumb").css("background", "#6aa84f");
+//     }
+//     if (value2 == 5) {
+//         $(".thumb").css("background", "#38761d");
+//     }
+// });
+
 $("#test3").mouseup(function () {
     $("#comment3").css("visibility", "visible");
 });
+
+// $("#test3").mouseup(function () {
+//     var value3 = $("#test3").val();
+//     if (value3 == 1) {
+//         $(".thumb").css("background", "#cc0000");
+//     }
+//     if (value3 == 2) {
+//         $(".thumb").css("background", "#e06666");
+//     }
+//     if (value3 == 3) {
+//         $(".thumb").css("background", "#51a39a");
+//     }
+//     if (value3 == 4) {
+//         $(".thumb").css("background", "#6aa84f");
+//     }
+//     if (value3 == 5) {
+//         $(".thumb").css("background", "#38761d");
+//     }
+// });
 
 $("#test4").mouseup(function () {
     $("#comment4").css("visibility", "visible");
 });
 
+// $("#test4").mouseup(function () {
+//     var value4 = $("#test4").val();
+//     if (value4 == 1) {
+//         $(".thumb").css("background", "#cc0000");
+//     }
+//     if (value4 == 2) {
+//         $(".thumb").css("background", "#e06666");
+//     }
+//     if (value4 == 3) {
+//         $(".thumb").css("background", "#51a39a");
+//     }
+//     if (value4 == 4) {
+//         $(".thumb").css("background", "#6aa84f");
+//     }
+//     if (value4 == 5) {
+//         $(".thumb").css("background", "#38761d");
+//     }
+// });
+
 $("#test5").mouseup(function () {
     $("#comment5").css("visibility", "visible");
 });
+
+// $("#test5").mouseup(function () {
+//     var value5 = $("#test5").val();
+//     if (value == 1) {
+//         $(".thumb").css("background", "#cc0000");
+//     }
+//     if (value5 == 2) {
+//         $(".thumb").css("background", "#e06666");
+//     }
+//     if (value5 == 3) {
+//         $(".thumb").css("background", "#51a39a");
+//     }
+//     if (value5 == 4) {
+//         $(".thumb").css("background", "#6aa84f");
+//     }
+//     if (value5 == 5) {
+//         $(".thumb").css("background", "#38761d");
+//     }
+// });
 
 $("#test6").mouseup(function () {
     $("#comment6").css("visibility", "visible");
 });
 
+// $("#test6").mouseup(function () {
+//     var value6 = $("#test6").val();
+//     if (value6 == 1) {
+//         $(".thumb").css("background", "#cc0000");
+//     }
+//     if (value6 == 2) {
+//         $(".thumb").css("background", "#e06666");
+//     }
+//     if (value6 == 3) {
+//         $(".thumb").css("background", "#51a39a");
+//     }
+//     if (value6 == 4) {
+//         $(".thumb").css("background", "#6aa84f");
+//     }
+//     if (value6 == 5) {
+//         $(".thumb").css("background", "#38761d");
+//     }
+// });
+
 $("#test7").mouseup(function () {
     $("#comment7").css("visibility", "visible");
 });
+
+// $("#test7").mouseup(function () {
+//     var value7 = $("#test7").val();
+//     if (value7 == 1) {
+//         $(".thumb").css("background", "#cc0000");
+//     }
+//     if (value7 == 2) {
+//         $(".thumb").css("background", "#e06666");
+//     }
+//     if (value7 == 3) {
+//         $(".thumb").css("background", "#51a39a");
+//     }
+//     if (value7 == 4) {
+//         $(".thumb").css("background", "#6aa84f");
+//     }
+//     if (value7 == 5) {
+//         $(".thumb").css("background", "#38761d");
+//     }
+// });
 
 
 // Skip and Save button functionality 
@@ -115,6 +230,12 @@ $("#save1").click(function () {
         scrollTop: $("#question_two").offset().top - $(window).height() / 12
     }, 900);
 
+    
+    $(".progress .determinate").css("width", "12.5%");
+    $(".progress .determinate").css("background-color", "darkcyan");
+    $("#progressText").text("Progress 1/8");
+
+    
 
 });
 
@@ -130,6 +251,8 @@ $("#save2").click(function () {
         scrollTop: $("#question_three").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "25%");
+    $("#progressText").text("Progress 2/8");
 });
 
 $("#save3").click(function () {
@@ -144,6 +267,8 @@ $("#save3").click(function () {
         scrollTop: $("#question_four").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "37.5%");
+    $("#progressText").text("Progress 3/8");
 });
 
 $("#save4").click(function () {
@@ -158,6 +283,8 @@ $("#save4").click(function () {
         scrollTop: $("#question_five").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "50%");
+    $("#progressText").text("Progress 4/8");
 });
 
 $("#save5").click(function () {
@@ -172,6 +299,8 @@ $("#save5").click(function () {
         scrollTop: $("#question_six").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "62.5%");
+    $("#progressText").text("Progress 5/8");
 });
 
 $("#save6").click(function () {
@@ -186,6 +315,8 @@ $("#save6").click(function () {
         scrollTop: $("#question_seven").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "75%");
+    $("#progressText").text("Progress 6/8");
 });
 
 $("#save7").click(function () {
@@ -201,6 +332,8 @@ $("#save7").click(function () {
         scrollTop: $("#question_eight").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "87.5%");
+    $("#progressText").text("Progress 7/8");
 
 });
 
@@ -218,6 +351,9 @@ $("#skip1").click(function () {
         scrollTop: $("#question_two").offset().top - $(window).height() / 12
     }, 900);
 
+    $(".progress .determinate").css("width", "12.5%");
+    $(".progress .determinate").css("background-color", "darkcyan");
+    $("#progressText").text("Progress 1/8");
 
 });
 
@@ -233,6 +369,8 @@ $("#skip2").click(function () {
         scrollTop: $("#question_three").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "25%");
+    $("#progressText").text("Progress 2/8");
 });
 
 $("#skip3").click(function () {
@@ -247,6 +385,8 @@ $("#skip3").click(function () {
         scrollTop: $("#question_four").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "37.5%");
+    $("#progressText").text("Progress 3/8");
 });
 
 $("#skip4").click(function () {
@@ -261,6 +401,8 @@ $("#skip4").click(function () {
         scrollTop: $("#question_five").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "50%");
+    $("#progressText").text("Progress 4/8");
 });
 
 $("#skip5").click(function () {
@@ -275,6 +417,8 @@ $("#skip5").click(function () {
         scrollTop: $("#question_six").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "62.5%");
+    $("#progressText").text("Progress 5/8");
 });
 
 $("#skip6").click(function () {
@@ -289,6 +433,8 @@ $("#skip6").click(function () {
         scrollTop: $("#question_seven").offset().top - $(window).height() / 6
     }, 900);
 
+    $(".progress .determinate").css("width", "75%");
+    $("#progressText").text("Progress 6/8");
 });
 
 $("#skip7").click(function () {
@@ -303,7 +449,8 @@ $("#skip7").click(function () {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#question_eight").offset().top - $(window).height() / 6
     }, 900);
-
+    $(".progress .determinate").css("width", "87.5%");
+    $("#progressText").text("Progress 7/8");
 
 });
 
