@@ -6,21 +6,21 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../views/index.html"));
   });
 
-  // app.get("/survey", function (req, res) {
-  //   res.sendFile(path.join(__dirname, "../views/survey.html"));
-  // });
+  app.get("/survey", function (req, res) {
+    res.sendFile(path.join(__dirname, "../views/survey.html"));
+  });
 
-  // app.get("/register", function (req, res) {
-  //   res.sendFile(path.join(__dirname, "../views/register.html"));
-  // });
+  app.get("/register", function (req, res) {
+    res.sendFile(path.join(__dirname, "../views/register.html"));
+  });
 
-  // app.get("/data", function (req, res) {
-  //   res.sendFile(path.join(__dirname, "../views/data.html"));
-  // });
+  app.get("/data", function (req, res) {
+    res.sendFile(path.join(__dirname, "../views/data.html"));
+  });
 
-  // app.get("/admin", function (req, res) {
-  //   res.sendFile(path.join(__dirname, "../views/admin.html"));
-  // });
+  app.get("/admin", function (req, res) {
+    res.sendFile(path.join(__dirname, "../views/admin.html"));
+  });
 
   // app.get("/viz", function (req, res) {
   //   res.sendFile(path.join(__dirname, "../views/visuals.html"));

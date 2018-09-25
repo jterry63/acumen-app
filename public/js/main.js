@@ -21,6 +21,10 @@ $(window).scroll(function () {
     }
 });
 
+
+
+
+
 // $(document).ready(function () {
 //     var scroll_start = 0;
 //     var startchange = $('#startchange');
@@ -36,6 +40,287 @@ $(window).scroll(function () {
 //         });
 //     }
 // });
+
+
+
+
+
+// Pop up bubbles on range slider
+
+
+$("#test1").mouseup(function () {
+    $("#comment1").css("visibility", "visible");
+
+});
+
+// $("#test1").mouseup(function () {
+//     var value = $("#test1").val();
+//     console.log(value);
+//     if (value == 1) {
+//         $(".thumb").css("background", "red");
+//     }
+//     if (value == 2) {
+//         $(".thumb").css("background", "orange");
+//     }
+//     if (value == 3) {
+//         $(".thumb").css("background", "yellow");
+//     }
+//     if (value == 4) {
+//         $(".thumb").css("background", "green");
+//     }
+//     if (value == 5) {
+//         $(".thumb").css("background", "darkcyan");
+//     }
+// });
+
+$("#test2").mouseup(function () {
+    $("#comment2").css("visibility", "visible");
+
+});
+
+$("#test3").mouseup(function () {
+    $("#comment3").css("visibility", "visible");
+});
+
+$("#test4").mouseup(function () {
+    $("#comment4").css("visibility", "visible");
+});
+
+$("#test5").mouseup(function () {
+    $("#comment5").css("visibility", "visible");
+});
+
+$("#test6").mouseup(function () {
+    $("#comment6").css("visibility", "visible");
+});
+
+$("#test7").mouseup(function () {
+    $("#comment7").css("visibility", "visible");
+});
+
+
+// Skip and Save button functionality 
+
+//Save
+
+$("#save1").click(function () {
+
+    $("#question_two").css("display", "block");
+    $("#question_two").css("background-color", "whitesmoke");
+    $("#dropDownIcon2").css("display", "none");
+    $("#question_hint1").css("display", "none");
+    $("#question_hint2").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_two").offset().top - $(window).height() / 12
+    }, 900);
+
+
+});
+
+$("#save2").click(function () {
+
+    $("#question_three").css("display", "block");
+    $("#question_three").css("background-color", "whitesmoke");
+    $("#dropDownIcon3").css("display", "none");
+    $("#question_hint2").css("display", "none");
+    $("#question_hint3").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_three").offset().top - $(window).height() / 6
+    }, 900);
+
+});
+
+$("#save3").click(function () {
+
+    $("#question_four").css("display", "block");
+    $("#question_four").css("background-color", "whitesmoke");
+    $("#dropDownIcon4").css("display", "none");
+    $("#question_hint3").css("display", "none");
+    $("#question_hint4").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_four").offset().top - $(window).height() / 6
+    }, 900);
+
+});
+
+$("#save4").click(function () {
+
+    $("#question_five").css("display", "block");
+    $("#question_five").css("background-color", "whitesmoke");
+    $("#dropDownIcon5").css("display", "none");
+    $("#question_hint4").css("display", "none");
+    $("#question_hint5").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_five").offset().top - $(window).height() / 6
+    }, 900);
+
+});
+
+$("#save5").click(function () {
+
+    $("#question_six").css("display", "block");
+    $("#question_six").css("background-color", "whitesmoke");
+    $("#dropDownIcon6").css("display", "none");
+    $("#question_hint5").css("display", "none");
+    $("#question_hint6").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_six").offset().top - $(window).height() / 6
+    }, 900);
+
+});
+
+$("#save6").click(function () {
+
+    $("#question_seven").css("display", "block");
+    $("#question_seven").css("background-color", "whitesmoke");
+    $("#dropDownIcon7").css("display", "none");
+    $("#question_hint6").css("display", "none");
+    $("#question_hint7").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_seven").offset().top - $(window).height() / 6
+    }, 900);
+
+});
+
+$("#save7").click(function () {
+
+    $("#question_eight").css("display", "block");
+    $("#question_eight").css("background-color", "whitesmoke");
+    $("#dropDownIcon8").css("display", "none");
+    $("#question_hint7").css("display", "none");
+    $("#question_hint8").css("display", "block");
+    $("#submitBtn").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_eight").offset().top - $(window).height() / 6
+    }, 900);
+
+
+});
+
+// Skip
+
+$("#skip1").click(function () {
+
+    $("#question_two").css("display", "block");
+    $("#question_two").css("background-color", "whitesmoke");
+    $("#dropDownIcon2").css("display", "none");
+    $("#question_hint1").css("display", "none");
+    $("#question_hint2").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_two").offset().top - $(window).height() / 12
+    }, 900);
+
+
+});
+
+$("#skip2").click(function () {
+
+    $("#question_three").css("display", "block");
+    $("#question_three").css("background-color", "whitesmoke");
+    $("#dropDownIcon3").css("display", "none");
+    $("#question_hint2").css("display", "none");
+    $("#question_hint3").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_three").offset().top - $(window).height() / 6
+    }, 900);
+
+});
+
+$("#skip3").click(function () {
+
+    $("#question_four").css("display", "block");
+    $("#question_four").css("background-color", "whitesmoke");
+    $("#dropDownIcon4").css("display", "none");
+    $("#question_hint3").css("display", "none");
+    $("#question_hint4").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_four").offset().top - $(window).height() / 6
+    }, 900);
+
+});
+
+$("#skip4").click(function () {
+
+    $("#question_five").css("display", "block");
+    $("#question_five").css("background-color", "whitesmoke");
+    $("#dropDownIcon5").css("display", "none");
+    $("#question_hint4").css("display", "none");
+    $("#question_hint5").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_five").offset().top - $(window).height() / 6
+    }, 900);
+
+});
+
+$("#skip5").click(function () {
+
+    $("#question_six").css("display", "block");
+    $("#question_six").css("background-color", "whitesmoke");
+    $("#dropDownIcon6").css("display", "none");
+    $("#question_hint5").css("display", "none");
+    $("#question_hint6").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_six").offset().top - $(window).height() / 6
+    }, 900);
+
+});
+
+$("#skip6").click(function () {
+
+    $("#question_seven").css("display", "block");
+    $("#question_seven").css("background-color", "whitesmoke");
+    $("#dropDownIcon7").css("display", "none");
+    $("#question_hint6").css("display", "none");
+    $("#question_hint7").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_seven").offset().top - $(window).height() / 6
+    }, 900);
+
+});
+
+$("#skip7").click(function () {
+
+    $("#question_eight").css("display", "block");
+    $("#question_eight").css("background-color", "whitesmoke");
+    $("#dropDownIcon8").css("display", "none");
+    $("#question_hint7").css("display", "none");
+    $("#question_hint8").css("display", "block");
+    $("#submitBtn").css("display", "block");
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#question_eight").offset().top - $(window).height() / 6
+    }, 900);
+
+
+});
+
+
+// $("#dropDownIconAlt").click(function () {
+//     $([document.documentElement, document.body]).animate({
+//         scrollTop: $("#question_one").offset().top - $(window).height() / 4.6
+//     }, 900);
+//     $.scrollLock(false);
+
+//     $("#dropDownIconAlt").css("visibility", "hidden");
+
+
+
+// });
+
+
 
 
 // Slider 
@@ -104,6 +389,64 @@ document.addEventListener('DOMContentLoaded', function () {
     var instances = M.Sidenav.init(elems, { 'edge': 'right' });
 });
 
+//tooltip on survey page
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, { 'exitDelay': 0 });
+});
+
+//scroll locking logic
+$.scrollLock = (function scrollLockSimple() {
+    var locked = false;
+    var $body;
+    var previous;
+
+    function lock() {
+        if (!$body) {
+            $body = $('body');
+        }
+
+        previous = $body.css('overflow');
+
+        $body.css('overflow', 'hidden');
+
+        locked = true;
+    }
+
+    function unlock() {
+        $body.css('overflow', previous);
+
+        locked = false;
+    }
+
+    return function scrollLock(on) {
+        // If an argument is passed, lock or unlock depending on truthiness
+        if (arguments.length) {
+            if (on) {
+                lock();
+            }
+            else {
+                unlock();
+            }
+        }
+        // Otherwise, toggle
+        else {
+            if (locked) {
+                unlock();
+            }
+            else {
+                lock();
+            }
+        }
+    };
+}());
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, { 'alignment': 'right' });
+});
+
 
 //google auth
 
@@ -161,5 +504,8 @@ document.addEventListener('DOMContentLoaded', function () {
 //     $("#profilePic").html(`<img src=${profilePic} id="userImage"></img>`);
 
 // }
+
+
+
 
 

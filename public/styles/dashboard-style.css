@@ -7485,3 +7485,8 @@ background-color: white;
   margin-left: 25px;
   margin-top: 22px;
 }
+
+.user-details {
+  background-image: url('/images/green.jpg');
+  height: 140px;
+}

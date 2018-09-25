@@ -7,8 +7,8 @@ var surveyData = [];
 module.exports = function (app) {
 
 
-  app.get("/api/surveys", function (req, res) {
-    var dbQuery = "SELECT * FROM zx3kgmdz05osf5xn.surveys";
+  app.get("/api/data", function (req, res) {
+    var dbQuery = "SELECT * FROM vle2lt3dz5ogjgdk.surveys";
 
     connection.query(dbQuery, function (err, result) {
       if (err) throw err;
@@ -23,9 +23,9 @@ module.exports = function (app) {
     console.log("Survey Data:");
     console.log(req.body);
 
-    var dbQuery = "INSERT INTO zx3kgmdz05osf5xn.surveys (question1, question2, question3, question4, question5) VALUES (?,?,?,?,?)";
+    var dbQuery = "INSERT INTO vle2lt3dz5ogjgdk.surveys (question1_value, question1_comment, question2_value, question2_comment, question3_value, question3_comment, question4_value, question4_comment, question5_value, question5_comment, question6_value, question6_comment, question7_value, question7_comment, question8_comment) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
-    connection.query(dbQuery, [req.body.question1, req.body.question2, req.body.question3, req.body.question4, req.body.question5], function (err, result) {
+    connection.query(dbQuery, [req.body.question1, req.body.comment1, req.body.question2, req.body.comment2, req.body.question3, req.body.comment3, req.body.question4, req.body.comment4, req.body.question5, req.body.comment5, req.body.question6, req.body.comment6, req.body.question7, req.body.comment7, req.body.comment8,], function (err, result) {
       if (err) throw err;
       console.log("Survey Successfully Saved!");
       res.end();

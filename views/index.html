@@ -84,7 +84,7 @@
 
               <a href="" class="waves-effect waves-teal btn-flat" style="color: grey;" id="nav3">Company</a>
 
-              <a href="" class="waves-effect waves-teal btn-flat" style="color: grey;" id="nav4">Login</a>
+              <a href="#modal1" class="waves-effect waves-teal btn-flat modal-trigger" style="color: grey;" id="nav4">Login</a>
 
             </div>
           </div>
@@ -98,6 +98,13 @@
 
         <div class="caption center-align" style="margin-top: 200px;">
           <h2 id="slogan" style="font-weight: 200; font-size: 50px;">When employees are happy, <br>your organization succeeds</h2>
+        </div>
+        <div class="buttons-wrapper">
+          <div class="row center">
+            <a class="waves-effect waves-light btn modal-trigger" id="getStarted" href="#modal1" style="background-color: rgba(0,0,0,0); border: 1px solid white;">get
+              started
+            </a>
+          </div>
         </div>
       </li>
       <!-- <li>
@@ -127,13 +134,7 @@
         </div>
       </li> -->
     </ul>
-    <div class="buttons-wrapper">
-      <div class="row center">
-        <a class="waves-effect waves-light btn modal-trigger" id="getStarted" href="#modal1" style="background-color: rgba(0,0,0,0); border: 1px solid white;">get
-          started
-        </a>
-      </div>
-    </div>
+  
 
     <br>
     <br>
@@ -202,7 +203,7 @@
           <div class="row">
             <div class="input-field col s4"></div>
             <div class="input-field col s4">
-              <input id="email" type="email" class="validate">
+              <input id="emailSubscription" type="email" class="validate">
               <label for="email" style="color: white;">Email</label>
             </div>
             <div class="input-field col s4"></div>
@@ -222,46 +223,46 @@
 
 
     <!-- Modal Structure for Login -->
-    <div id="modal1 " class="modal ">
-      <div class="modal-content ">
+    <div id="modal1" class="modal">
+      <div class="modal-content">
 
-        <h5 style="text-align: center; color: grey; ">Sign In</h5>
+        <h5 style="text-align: center; color: grey;">Sign In</h5>
 
 
 
-        <div class="input-field col s12 ">
-          <input id="email " type="email " class="validate " required>
-          <label for="email ">Email</label>
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" required>
+          <label for="email">Email</label>
         </div>
 
 
-        <div class="input-field col s12 ">
-          <input id="password " type="password " class="validate " minlength="6 " required>
-          <label for="password ">Password</label>
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate" minlength="6" required>
+          <label for="password">Password</label>
         </div>
 
 
         <br>
-        <div class="text-center p-t-136 ">
-          <a class="txt2 " href="register ">
+        <div class="text-center p-t-136">
+          <a class="txt2" href="register">
             Register
-            <i class="fa fa-long-arrow-right m-l-5 " aria-hidden="true "></i>
+            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
           </a>
         </div>
         <br>
-        <div class="text-center p-t-136 ">
-          <a class="txt2 " href="# ">
+        <div class="text-center p-t-136">
+          <a class="txt2" href="#">
             Forgot Password?
-            <i class="fa fa-long-arrow-right m-l-5 " aria-hidden="true "></i>
+            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
           </a>
         </div>
         <br>
         <!-- <div class="g-signin2 " data-onsuccess="onSignIn "></div> -->
 
       </div>
-      <div class="modal-footer ">
-        <a href="admin " class="modal-close waves-effect waves-green btn-flat " style="color: white; background-color:
-                  darkcyan; ">Login</a>
+      <div class="modal-footer">
+        <a href="admin" class="modal-close waves-effect waves-green btn-flat" style="color: white; background-color:
+                  darkcyan;">Login</a>
       </div>
     </div>
 
