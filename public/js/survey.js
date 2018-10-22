@@ -48,6 +48,9 @@ $("#submit").on("click", function (event) {
             $("#test7").val();
             $("#textarea7").val();
             $("#textarea8").val();
+
+            $("#progressText").text("Progress 8/8");
+            $(".progress .determinate").css("width", "100%");
         });
 
 });

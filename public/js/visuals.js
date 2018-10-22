@@ -6,7 +6,7 @@ $("#getData").on("click", function (event) {
   var currentURL = window.location.origin;
 
   // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
-  $.ajax({ url: currentURL + "/api/surveys", method: "GET" })
+  $.ajax({ url: currentURL + "/api/data", method: "GET" })
     .then(function (data) {
 
       console.log("------------------------------------");
@@ -18,14 +18,18 @@ $("#getData").on("click", function (event) {
       var ans3 = [];
       var ans4 = [];
       var ans5 = [];
+      var ans6 = [];
+      var ans7 = [];
 
       for (i = 0; i < data.length; i++) {
-        ans1.push(data[i].question1)
-        ans2.push(data[i].question2)
-        ans3.push(data[i].question3)
-        ans4.push(data[i].question4)
-        ans5.push(data[i].question5)
-
+        ans1.push(data[i].question1_value)
+        ans2.push(data[i].question2_value)
+        ans3.push(data[i].question3_value)
+        ans4.push(data[i].question4_value)
+        ans5.push(data[i].question5_value)
+        ans6.push(data[i].question6_value)
+        ans7.push(data[i].question7_value)
+        
       }
 
       console.log("this is answer 1: " + ans1)
@@ -33,6 +37,8 @@ $("#getData").on("click", function (event) {
       console.log("this is answer 3: " + ans3)
       console.log("this is answer 4: " + ans4)
       console.log("this is answer 5: " + ans5)
+      console.log("this is answer 6: " + ans6)
+      console.log("this is answer 7: " + ans7)
 
 
       /////////////this nested for loop is cleaning and formatting the data and pushing it into the ans2data variable//////////
@@ -40,8 +46,8 @@ $("#getData").on("click", function (event) {
       var ans1data = [];
 
 
-      var ydistinct = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];        // ydistinct is the actual array we want to use for our bar chart.
-      for (b = 0; b < 10; b++) {                         // these two for loops are counting the amount of answers for each distinct y and pushing them into an
+      var ydistinct = [0, 0, 0, 0, 0, 0];        // ydistinct is the actual array we want to use for our bar chart.
+      for (b = 0; b < 6; b++) {                         // these two for loops are counting the amount of answers for each distinct y and pushing them into an
         for (d = 0; d < ans1.length; d++) {     // array that includes the number 0 for answers that were never chosen.
           if (ans1[d] == b) {
             ydistinct[b - 1] = ydistinct[b - 1] + 1;
@@ -57,14 +63,14 @@ $("#getData").on("click", function (event) {
 
       // this for loop is filling plot2data with the data for the chart
       var obj = {};
-      obj["x"] = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+      obj["x"] = ['1', '2', '3', '4', '5'];
       obj["y"] = ydistinct;
       obj["name"] = "q1"
       obj["type"] = 'bar'
       plot1data.push(obj)
 
       var layout1 = {
-        title: "Will Murph Remember Us?",
+        title: "Are you happy at this company?",
         barmode: 'group',
         yaxis: { title: "Total Votes" },
         xaxis: { title: "Chances Murph Will Remember Us [1-10]" }
