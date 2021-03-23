@@ -2,9 +2,10 @@ var db = require("../models");
 var path = require("path");
 var connection = require("../config/connection.js")
 
-var surveyData = [];
+
 
 module.exports = function (app) {
+  var surveyData = [];
 
 
   app.get("/api/data", function (req, res) {
